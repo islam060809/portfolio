@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
-// import { motion } from 'framer-motion';
 import './App.scss';
 import img from "./assets/img.jpg"
-// import { FaLinkedin } from "react-icons/fa";
-// import { IoLogoGithub } from "react-icons/io5";
-// import { RiTelegram2Fill } from "react-icons/ri";
-// import emailjs from '@emailjs/browser';
+import { FaLinkedin } from "react-icons/fa";
+import { IoLogoGithub } from "react-icons/io5";
+import { RiTelegram2Fill } from "react-icons/ri";
+import emailjs from '@emailjs/browser';
 
 const Port = () => {
 
@@ -21,22 +20,22 @@ const Port = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        // emailjs
-        //     .sendForm('service_iu00dog', 'template_nahvvtv', form.current, {
-        //         publicKey: '4WFI4YoSE9k6qz-rT',
-        //     })
-        //     .then(
-        //         () => {
-        //             alert("Сообщение отправлено")
-        //             e.target.user_name.value = ""
-        //             e.target.user_email.value = ""
-        //             e.target.message.value = ""
-        //         },
-        //         (error) => {
-        //             console.log('FAILED...', error.text);
-        //             alert(error.text);
-        //         },
-        //     );
+        emailjs
+            .sendForm('service_iu00dog', 'template_nahvvtv', form.current, {
+                publicKey: '4WFI4YoSE9k6qz-rT',
+            })
+            .then(
+                () => {
+                    alert("Сообщение отправлено")
+                    e.target.user_name.value = ""
+                    e.target.user_email.value = ""
+                    e.target.message.value = ""
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    alert(error.text);
+                },
+            );
     };
 
     return (
@@ -63,13 +62,13 @@ const Port = () => {
                     <button onClick={() => handleScroll('projects')} className='btn-f'>ПРОЕКТЫ</button>
                     <div className="contakts-home">
                         <a style={{ color: "black" }} target="_blank" href="https://www.linkedin.com/in/%D0%B8%D1%81%D0%BB%D0%B0%D0%BC-%D1%82%D0%B0%D0%B1%D0%B0%D0%B5%D0%B2-78365332a/">
-                            {/* <FaLinkedin className='icon' /> */}
+                            <FaLinkedin className='icon' />
                         </a>
                         <a style={{ color: "black" }} target="_blank" href="https://github.com/islam060809">
-                            {/* <IoLogoGithub className='icon' /> */}
+                            <IoLogoGithub className='icon' />
                         </a>
                         <a style={{ color: "black" }} target="_blank" href="https://t.me/sachashulgin">
-                            {/* <RiTelegram2Fill className='icon' /> */}
+                            <RiTelegram2Fill className='icon' />
                         </a>
                     </div>
                 </div>
@@ -187,18 +186,17 @@ const Port = () => {
                             <h3 className='h3'>СОЦИАЛЬНЫЙ</h3>
                             <div className="icons">
                                 <a style={{ color: "white" }} target="_blank" href="https://www.linkedin.com/in/%D0%B8%D1%81%D0%BB%D0%B0%D0%BC-%D1%82%D0%B0%D0%B1%D0%B0%D0%B5%D0%B2-78365332a/">
-                                    {/* <FaLinkedin className='icon' /> */}
+                                    <FaLinkedin className='icon' />
                                 </a>
                                 <a style={{ color: "white" }} target="_blank" href="https://github.com/islam060809">
-                                    {/* <IoLogoGithub className='icon' /> */}
+                                    <IoLogoGithub className='icon' />
                                 </a>
                                 <a style={{ color: "white" }} target="_blank" href="https://t.me/sachashulgin">
-                                    {/* <RiTelegram2Fill className='icon' /> */}
+                                    <RiTelegram2Fill className='icon' />
                                 </a>
                             </div>
                         </div>
                     </div>
-                    {/* <hr /> */}
                     <p className='end'>© Copyright 2025. Made by Tabaev Islam</p>
                 </div>
             </footer>
