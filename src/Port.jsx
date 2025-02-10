@@ -7,6 +7,8 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import emailjs from '@emailjs/browser';
 
 const Port = () => {
+    const form = useRef();
+    const [status, setStatus] = useState("");
 
     const handleScroll = (id) => {
         const element = document.getElementById(id);
@@ -14,31 +16,6 @@ const Port = () => {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     };
-
-    // const form = useRef();
-    // const sendEmail = (e) => {
-    //     e.preventDefault();
-
-    //     emailjs
-    //         .sendForm('service_iu00dog', 'template_nahvvtv', form.current, {
-    //             publicKey: '4WFI4YoSE9k6qz-rT',
-    //         })
-    //         .then(
-    //             () => {
-    //                 alert("Сообщение отправлено")
-    //                 e.target.user_name.value = ""
-    //                 e.target.user_email.value = ""
-    //                 e.target.message.value = ""
-    //             },
-    //             (error) => {
-    //                 console.log('FAILED...', error.text);
-    //                 alert(error.text);
-    //             },
-    //         );
-    // };
-
-    const form = useRef();
-    const [status, setStatus] = useState("");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -174,7 +151,7 @@ const Port = () => {
             </section>
 
 
-            {/* <section
+            <section
                 id="contact"
                 className="section"
             >
@@ -185,49 +162,16 @@ const Port = () => {
                 <div className="form-box">
                     <form ref={form} onSubmit={sendEmail}>
                         <label>Имя</label>
-                        <input className='inp' type="text" name="user_name" placeholder='Введите ваше имя' />
+                        <input className='inp' type="text" name="user_name" placeholder='Введите ваше имя' required />
                         <label>Электронная почта</label>
-                        <input className='inp' type="email" name="user_email" placeholder='Введите свой одрес электронной почты' />
+                        <input className='inp' type="email" name="user_email" placeholder='Введите свой одрес электронной почты' required />
                         <label>Сообщение</label>
                         <textarea className='inp' name="message" placeholder="Введите ваше сообщение" />
                         <input className='btn-f' type="submit" value="Отправить" />
                     </form>
+                    {status && <p className="mt-2 text-sm text-center">{status}</p>}
                 </div>
-            </section> */}
-
-            <div className="max-w-md mx-auto p-4 bg-white shadow-lg rounded-xl">
-                <h2 className="text-lg font-semibold mb-4">Свяжитесь с нами</h2>
-                <form ref={form} onSubmit={sendEmail} className="space-y-4">
-                    <input
-                        type="text"
-                        name="user_name"
-                        placeholder="Ваше имя"
-                        className="w-full p-2 border rounded-md"
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="user_email"
-                        placeholder="Ваш email"
-                        className="w-full p-2 border rounded-md"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        placeholder="Ваше сообщение"
-                        className="w-full p-2 border rounded-md"
-                        required
-                    ></textarea>
-                    <button
-                        type="submit"
-                        className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
-                    >
-                        Отправить
-                    </button>
-                </form>
-                {status && <p className="mt-2 text-sm text-center">{status}</p>}
-            </div>
-
+            </section>
 
             <footer className="footer">
                 <div className="footer-all">
