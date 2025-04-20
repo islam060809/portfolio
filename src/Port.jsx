@@ -87,7 +87,7 @@ const Port = () => {
                         <h3>Познакомьтесь со мной поближе!</h3>
                         <p>Меня зовут Ислам Табаев, и я начинающий разработчик в сфере Front-end. <br />
                             Моя карьера в IT началась с обучения на шестимесячном курсе в OKURMEN-IT, где я освоил основы веб-разработки и получил первые практические навыки. <br />
-                            На данный момент я прохожу стажировку в OKURMEN-PRO, где работаю над реальными проектами, совершенствую свои знания и учусь применять их в командной работе. <br />
+                            А также я проходил  стажировку в OKURMEN-PTO, где работал над реальными проектами, совершенствуя свои знания и училсяприменять их в командной работе.<br />
                             Несмотря на то, что мой опыт пока невелик, я уже успел участвовать в разработке интерфейсов, верстке адаптивных сайтов и интеграции API. <br />
                             Работа в команде дала мне понимание важности коммуникации, ответственности и стремления к общему результату. <br />
                             В будущем я планирую развиваться как профессионал, участвовать в крупных проектах и стать полноценным членом IT-сообщества, внося свой вклад в создание современных и удобных цифровых решений.</p>
@@ -127,8 +127,8 @@ const Port = () => {
                         <div className="text">
                             <h3>Проект 1</h3>
                             <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <button className='btn-f'>  Посмотреть на GitHub</button></a>
+                            {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"> */}
+                            {/* <button className='btn-f'>  Посмотреть на GitHub</button></a> */}
                         </div>
                     </div>
                     <div className="project-card">
@@ -136,16 +136,18 @@ const Port = () => {
                         <div className="text">
                             <h3>Проект 1</h3>
                             <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <button className='btn-f'>  Посмотреть на GitHub</button></a>                        </div>
+                            {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"> */}
+                            {/* <button className='btn-f'>  Посмотреть на GitHub</button></a>*/}
+                        </div>
                     </div>
                     <div className="project-card">
                         <img src={img} alt="Проект 1" className="project-image" />
                         <div className="text">
                             <h3>Проект 1</h3>
                             <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                                <button className='btn-f'>  Посмотреть на GitHub</button></a>                        </div>
+                            {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                                <button className='btn-f'>  Посмотреть на GitHub</button></a>    */}
+                        </div>
                     </div>
                 </div>
             </section>
