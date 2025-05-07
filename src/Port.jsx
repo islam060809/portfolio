@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import './App.scss';
-import img from "./assets/img.jpg"
+import staff from "./assets/staff.png"
+import womezing from "./assets/womezing.png"
+import euphoria from "./assets/euphoria.png"
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io5";
 import { RiTelegram2Fill } from "react-icons/ri";
@@ -123,28 +125,28 @@ const Port = () => {
                     собственное тематическое исследование.</p>
                 <div className="projects-grid">
                     <div className="project-card">
-                        <img src={img} alt="Проект 1" className="project-image" />
+                        <img src={womezing} alt="Проект 1" className="project-image" />
                         <div className="text">
-                            <h3>Проект 1</h3>
-                            <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
+                            <h3>Womezing</h3>
+                            <p>Womezing — это учебный проект, созданный в рамках курсов по веб-разработке. Сайт посвящён женской одежде и демонстрирует базовые возможности интернет-магазина</p>
                             {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"> */}
                             {/* <button className='btn-f'>  Посмотреть на GitHub</button></a> */}
                         </div>
                     </div>
                     <div className="project-card">
-                        <img src={img} alt="Проект 1" className="project-image" />
+                        <img src={euphoria} alt="Проект 1" className="project-image" />
                         <div className="text">
-                            <h3>Проект 1</h3>
-                            <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
+                            <h3>Euphoria</h3>
+                            <p>Euphoria — это современный интернет-магазин модной одежды, созданный в рамках учебного проекта. Сайт предлагает стильные и актуальные коллекции для тех, кто ценит комфорт, качество и индивидуальность</p>
                             {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer"> */}
                             {/* <button className='btn-f'>  Посмотреть на GitHub</button></a>*/}
                         </div>
                     </div>
                     <div className="project-card">
-                        <img src={img} alt="Проект 1" className="project-image" />
+                        <img src={staff} alt="Проект 1" className="project-image" />
                         <div className="text">
-                            <h3>Проект 1</h3>
-                            <p>Dopefolio — это успешный проект с открытым исходным кодом, который я создал и который был представлен на некоторых крупнейших технических сайтах, таких как CSS-Tricks, Hostinger и т. д., и используется тысячами разработчиков по всему миру.</p>
+                            <h3>Staff</h3>
+                            <p>Staff — учебный проект в формате цифрового маркетплейса, где сходятся последние технологические новинки и актуальные fashion-тенденции. Этот концепт-стор создан для демонстрации современных подходов к e-commerce, объединяя премиальную электронику и стильные луки в едином цифровом пространстве</p>
                             {/* <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                                 <button className='btn-f'>  Посмотреть на GitHub</button></a>    */}
                         </div>
